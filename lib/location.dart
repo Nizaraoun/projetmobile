@@ -31,7 +31,6 @@ class _locationState extends State<location> {
 //just tbadel les valeur de latitude et longitude b cl.latitude et cl.longitude bel yaatik postion mta3 l'utilisateur 1
     Marker(markerId: MarkerId("1"), position: LatLng(36.8189700, 10.1657900)),
   };
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +47,6 @@ class _locationState extends State<location> {
     );
   }
 }
-
 /*<meta-data android:name="com.google.android.geo.API_KEY"
            android:value="AIzaSyBkKs82L66jBg20jlFOGMwJL6oljrKGDV8"/>*/
 /*<manifest ...
