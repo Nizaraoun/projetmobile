@@ -31,16 +31,6 @@ class _locationState extends State<location> {
 //just tbadel les valeur de latitude et longitude b cl.latitude et cl.longitude bel yaatik postion mta3 l'utilisateur 1
     Marker(markerId: MarkerId("1"), position: LatLng(36.8189700, 10.1657900)),
   };
-  //les  markers yjou mel base des donnes {newlatitude,newongitude}
-  changeLocation(newlatitude, newlongitude) async {
-    mymarker.remove(Marker(markerId: MarkerId("2")));
-    mymarker.add(Marker(
-        markerId: MarkerId("2"), position: LatLng(newlatitude, newlongitude)));
-    setState(() {});
-    final GoogleMapController controller = await _controller.future;
-    controller.animateCamera(CameraUpdate.newCameraPosition(CameraPosition(
-        target: LatLng(newlatitude, newlongitude), zoom: 17.4746)));
-  }
 
   @override
   Widget build(BuildContext context) {
